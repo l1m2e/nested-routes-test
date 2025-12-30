@@ -1,0 +1,47 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --port 3333 --open",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc",
+    "preview": "vite preview",
+    "test": "vitest",
+    "up": "taze major -I",
+    "docs:dev": "vitepress dev docs --host",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vue": "^3.5.16",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.14.1",
+    "@kubb/cli": "^4.12.6",
+    "@types/node": "^22.15.31",
+    "@unocss/eslint-plugin": "^66.2.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.28.0",
+    "eslint-plugin-format": "^1.0.1",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^16.1.0",
+    "postcss": "^8.5.6",
+    "taze": "^19.1.0",
+    "type-fest": "^5.3.1",
+    "typescript": "^5.8.3",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-router": "^0.19.2",
+    "vite": "^6.3.5",
+    "vitepress": "^1.6.4",
+    "vitest": "^3.2.3",
+    "vue-tsc": "^2.2.10"
+  },
+  "resolutions": {
+    "unplugin": "^2.3.5",
+    "vite": "^6.3.5"
+  }
+}

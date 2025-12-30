@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "jsx": "preserve",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "vite/client",
+      "unplugin-vue-router/client"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "vueCompilerOptions": {
+    "plugins": [
+      "unplugin-vue-router/volar/sfc-typed-router"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "*.d.ts",
+    "docs/**/*.vue",
+    "docs/**/*.md"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "eslint.config.js"
+  ]
+}
